@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+div#left-half {
+  width: 50%;
+  height: 100%;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+img#logo {
+  filter: invert(100%);
+  width: 50%;
+  position: absolute;
+  top: 30%;
+  left: 45%;
+}
+
+img#lady {
+  width: 30%;
+  position: absolute;
+  top: 10%;
+  left: 60%;
+}
+
+nav {
+  float: right;
+  margin-top: 70%;
+  margin-right: 12%;
+}
+
+nav > ul > li {
+  display: inline;
+  padding-left: 10px;
+}
+
+nav > ul > li > a {
+  font-family: 'din-2014-narrow', sans-serif;
+  font-weight: 200;
+  font-size: 1em;
+  color: white;
+  text-align: center;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  position: relative;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+a::after {
+  transition: width 200ms ease-in, left 200ms ease-in, right 200ms ease-in;
+  content: '';
+  display: block;
+  border-bottom: 0.1em solid #fff;
+  width: 0;
+  height: .1em;
+  position: absolute;
+  top: 1.5em;
+  left: 50%;
+  right: 50%;
+  z-index: 1;
+  margin: 0 auto
+}
+
+a:hover::after {
+  width: 100%;
+  left: 0;
+  right: 0
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 5em;
+  color: white;
+  text-align: center;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}

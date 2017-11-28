@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 body {
-  background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)),
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
               url(../images/grave.jpg);
   background-position: center top;
   background-size: cover;
