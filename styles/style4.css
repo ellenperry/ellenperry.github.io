@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+html, body, .full-height {
+  height: 100%;
+}
+
+.wrap-reverse {
+  flex-wrap: wrap-reverse;
+}
+
+#left-home {
+  background-color: black;
+}
+
+#spacer-home {
+  height: 15%;
+}
+
+@media (min-width: 768px) {
+  #spacer-home {
+    height: 18%;
+  }
+}
+
+@media (min-width: 992px) {
+  #spacer-home {
+    height: 23%;
+  }
+}
+
+#logo-home {
+  background: url('../images/logo.png') bottom center / contain no-repeat;
+  filter: invert(100%);
+  height: 50%;
+}
+
+#menu-home > .col {
+  text-align: center;
+}
+
+#menu-home a, .btn {
+  font-family: din-2014-narrow;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  font-size: 0.75em;
+}
+
+#menu-home .dropdown-menu {
+  min-width: 0;
+}
+
+#right-home {
+  background: url('../images/lady.jpg') center center / contain no-repeat, white;
+}
+
+.portfolio.navbar {
+  align-items: flex-end;
+}
+
+.portfolio .navbar-collapse {
+  margin-bottom: 1em;
+}
