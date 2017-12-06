@@ -118,3 +118,11 @@ html, body, .full-height {
 .nav2.bg-dark {
   background-color: #000 !important;
 }
+
+.card {
+  margin-bottom: 2em;
+}
+
+.container.cards {
+  margin-top: 2em;
+}
