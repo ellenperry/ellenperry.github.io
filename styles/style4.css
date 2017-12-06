@@ -69,11 +69,11 @@ html, body, .full-height {
 
 .nav1 .logo {
   height: 6em;
-  margin: 0.3125em auto;
+  margin: 0.5em auto;
 }
 
 .nav1 .navbar-collapse, .nav1 .navbar-toggler {
-  margin-bottom: 0.625em;
+  margin-bottom: 1em;
 }
 
 .nav1 .nav-item {
@@ -106,7 +106,7 @@ html, body, .full-height {
 
 .nav2 .nav-link {
   color: #fff;
-  margin: auto 1em;
+  margin: auto 0.3125em;
   transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
