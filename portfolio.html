@@ -23,43 +23,107 @@
 </head>
 <body>
 
-	<nav class="navbar navbar-expand-md navbar-light portfolio">
-	  <a class="navbar-brand" href="#">
-			<img src="images/logo.png" style="height: 8em;">
-		</a>
-	  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarPortfolio" aria-controls="navbarPortfolio" aria-expanded="false" aria-label="Toggle navigation">
-	    <span class="navbar-toggler-icon"></span>
-	  </button>
+	<div class="container">
+		<nav class="navbar navbar-expand-md navbar-light nav1">
+		  <a class="navbar-brand" href="#">
+				<img src="images/logo.png" class="logo">
+			</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarPortfolio" aria-controls="navbarPortfolio" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarPortfolio">
+		    <ul class="navbar-nav ml-auto btn-group" role="group">
+	        <a class="btn btn-outline-dark kern-fix" href="#">Home</a>
+					<a class="btn btn-outline-dark kern-fix" href="#">About</a>
+					<a class="btn btn-outline-dark kern-fix" href="#">Contact</a>
+					<li class="btn-group" role="group">
+				    <button id="menuHome" type="button" class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				      Portfolio
+				    </button>
+				    <div class="dropdown-menu" aria-labelledby="menuHome">
+				      <a class="dropdown-item" href="#">Tattoo</a>
+							<a class="dropdown-item" href="#">Illustration</a>
+							<a class="dropdown-item" href="#">Design</a>
+							<a class="dropdown-item" href="#">Sketches</a>
+				    </div>
+				  </li>
+		    </ul>
+		  </div>
+		</nav>
+	</div>
 
-	  <div class="collapse navbar-collapse" id="navbarPortfolio">
-	    <ul class="navbar-nav mr-auto">
-	      <li class="nav-item active">
-	        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link" href="#">Link</a>
-	      </li>
-	      <li class="nav-item dropdown">
-	        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-	          Dropdown
-	        </a>
-	        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-	          <a class="dropdown-item" href="#">Action</a>
-	          <a class="dropdown-item" href="#">Another action</a>
-	          <div class="dropdown-divider"></div>
-	          <a class="dropdown-item" href="#">Something else here</a>
-	        </div>
-	      </li>
-	      <li class="nav-item">
-	        <a class="nav-link disabled" href="#">Disabled</a>
-	      </li>
-	    </ul>
-	    <form class="form-inline my-2 my-lg-0">
-	      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-	      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-	    </form>
-	  </div>
+	<nav class="navbar navbar-dark bg-dark nav2">
+		<ul class="nav nav-pills m-auto">
+		  <li class="nav-item">
+		    <a class="nav-link active kern-fix" href="#">Tattoo</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link kern-fix" href="#">Illustration</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link kern-fix" href="#">Design</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link kern-fix" href="#">Sketches</a>
+		  </li>
+		</ul>
 	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<div class="row">
+				<div class="col-sm-6">
+					<div class="card">
+						<img class="card-img-top" src="#" alt="Card image cap">
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="card">
+						<img class="card-img-top" src="#" alt="Card image cap">
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="row">
+				<div class="col-sm-6">
+					<div class="card">
+						<img class="card-img-top" src="#" alt="Card image cap">
+					</div>
+				</div>
+				<div class="col-sm-6">
+					<div class="card">
+						<img class="card-img-top" src="#" alt="Card image cap">
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-3">
+				<div class="card">
+					<img class="card-img-top" src="#" alt="Card image cap">
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="card">
+					<img class="card-img-top" src="#" alt="Card image cap">
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="card">
+					<img class="card-img-top" src="#" alt="Card image cap">
+				</div>
+			</div>
+			<div class="col-sm-3">
+				<div class="card">
+					<img class="card-img-top" src="#" alt="Card image cap">
+				</div>
+			</div>
+		</div>
+	</div>
+
 	<!-- Bootstrap JS -->
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>

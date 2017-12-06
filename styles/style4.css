@@ -13,18 +13,18 @@ html, body, .full-height {
 }
 
 #spacer-home {
-  height: 15%;
+  height: 10%;
 }
 
 @media (min-width: 768px) {
   #spacer-home {
-    height: 18%;
+    height: 15%;
   }
 }
 
 @media (min-width: 992px) {
   #spacer-home {
-    height: 23%;
+    height: 20%;
   }
 }
 
@@ -32,6 +32,7 @@ html, body, .full-height {
   background: url('../images/logo.png') bottom center / contain no-repeat;
   filter: invert(100%);
   height: 50%;
+  margin: 1em 10% 2em 10%;
 }
 
 #menu-home > .col {
@@ -54,10 +55,66 @@ html, body, .full-height {
   background: url('../images/lady.jpg') center center / contain no-repeat, white;
 }
 
-.portfolio.navbar {
+.kern-fix {
+  padding-right: 0.65rem;
+}
+
+.nav-link.kern-fix {
+  padding-right: 0.9rem;
+}
+
+.nav1.navbar {
   align-items: flex-end;
 }
 
-.portfolio .navbar-collapse {
+.nav1 .logo {
+  height: 6em;
+  margin: 0.3125em auto;
+}
+
+.nav1 .navbar-collapse, .nav1 .navbar-toggler {
+  margin-bottom: 0.625em;
+}
+
+.nav1 .nav-item {
+  margin-right: 1em;
+}
+
+.btn-outline-dark {
+  color: #000;
+  border-color: #000;
+}
+
+.btn-outline-dark:hover {
+  background-color: #000;
+  border-color: #000;
+}
+
+.nav2 {
+  font-family: din-2014-narrow;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  font-size: 0.75em;
   margin-bottom: 1em;
+}
+
+.nav2 .nav-link.active {
+  background-color: #fff;
+  color: #000;
+}
+
+.nav2 .nav-link {
+  color: #fff;
+  margin: auto 1em;
+  transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.nav2 .nav-link:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.nav2.bg-dark {
+  background-color: #000 !important;
 }
