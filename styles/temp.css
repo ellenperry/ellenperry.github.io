@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+body {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+              url(../images/grave.jpg);
+  background-position: center top;
+  background-size: cover;
+}
+
+div#wrapper {
+  width: 100%;
+  margin-top: 24%;
+}
+
+h1 {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 5em;
+  color: white;
+  text-align: center;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+}

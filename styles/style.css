@@ -1,23 +1,152 @@
 @charset "UTF-8";
 
-body {
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
-              url(../images/grave.jpg);
-  background-position: center top;
-  background-size: cover;
+html, body, .full-height {
+  height: 100%;
 }
 
-div#wrapper {
-  width: 100%;
-  margin-top: 24%;
+.wrap-reverse {
+  flex-wrap: wrap-reverse;
 }
 
-h1 {
-  font-family: 'Playfair Display', serif;
-  font-weight: 700;
-  font-size: 5em;
-  color: white;
+#left-home {
+  background-color: black;
+}
+
+#spacer-home {
+  height: 10%;
+}
+
+@media (min-width: 768px) {
+  #spacer-home {
+    height: 15%;
+  }
+}
+
+@media (min-width: 992px) {
+  #spacer-home {
+    height: 20%;
+  }
+}
+
+#logo-home {
+  background: url('../images/logo.png') bottom center / contain no-repeat;
+  filter: invert(100%);
+  height: 50%;
+  margin: 1em 10% 2em 10%;
+}
+
+#menu-home > .col {
   text-align: center;
-  letter-spacing: 0.3em;
+}
+
+#menu-home a, .btn {
+  font-family: din-2014-narrow;
   text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  font-size: 0.75em;
+}
+
+#menu-home .dropdown-menu {
+  min-width: 0;
+}
+
+#right-home {
+  background: url('../images/lady.jpg') center center / contain no-repeat, white;
+}
+
+.kern-fix {
+  padding-right: 0.65rem;
+}
+
+.nav-link.kern-fix {
+  padding-right: 0.9rem;
+}
+
+.nav1.navbar {
+  align-items: flex-end;
+}
+
+.nav1 .logo {
+  height: 6em;
+  margin: 0.5em auto;
+}
+
+.nav1 .navbar-collapse, .nav1 .navbar-toggler {
+  margin-bottom: 1em;
+}
+
+.nav1 .nav-item {
+  margin-right: 1em;
+}
+
+.btn-outline-dark {
+  color: #000;
+  border-color: #000;
+}
+
+.btn-outline-dark:hover {
+  background-color: #000;
+  border-color: #000;
+}
+
+.nav2 {
+  font-family: din-2014-narrow;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  font-size: 0.75em;
+  margin-bottom: 1em;
+}
+
+.nav2 .nav-link.active {
+  background-color: #fff;
+  color: #000;
+}
+
+.nav2 .nav-link {
+  color: #fff;
+  margin: auto 0.3125em;
+  transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.nav2 .nav-link:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.nav2.bg-dark {
+  background-color: #000 !important;
+}
+
+.fixednav {
+	position: fixed;
+	top: 0;
+	z-index: 1;
+  width: 100%;
+}
+
+.card {
+  margin-bottom: 2em;
+}
+
+.container.cards {
+  margin-top: 2em;
+}
+
+.cards .card a img {
+  filter: grayscale(100%);
+  transition: filter .15s ease-in-out;
+}
+
+.cards .card a:hover img {
+  filter: grayscale(0%);
+}
+
+.nav1 a.dropdown-item {
+  font-family: din-2014-narrow;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-weight: 600;
+  font-size: 0.75em;
 }
