@@ -150,3 +150,22 @@ html, body, .full-height {
   font-weight: 600;
   font-size: 0.75em;
 }
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 4em;
+}
+
+.coming-soon {
+  width: 100%;
+  text-align: center;
+  margin-top: 6em;
+}
+
+a.btn.btn-outline-dark.active.kern-fix {
+  box-shadow: 0 0 0 0;
+  background-color: #000;
+  border-color: #000;
+}
