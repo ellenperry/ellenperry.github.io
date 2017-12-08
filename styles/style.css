@@ -82,7 +82,7 @@ html, body, .full-height {
 }
 
 .nav1 .navbar-collapse, .nav1 .navbar-toggler {
-  margin-bottom: 1em;
+  margin-bottom: 0.85em;
 }
 
 .nav1 .nav-item {
@@ -108,15 +108,16 @@ html, body, .full-height {
   margin-bottom: 1em;
 }
 
-.nav2 .nav-link.active {
-  background-color: #fff;
-  color: #000;
-}
-
 .nav2 .nav-link {
   color: #fff;
   margin: auto 0.3125em;
-  transition: background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+  border-radius: 0.25rem;
+  transition: background-color .15s ease-in-out, border-color .15s ease-in-out, color .15s ease-in-out;
+}
+
+.nav2 .nav-link.active {
+  background-color: #fff;
+  color: #000;
 }
 
 .nav2 .nav-link:hover {
@@ -136,11 +137,11 @@ html, body, .full-height {
 }
 
 .card {
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 }
 
 .container.cards {
-  margin-top: 2em;
+  margin-top: 1em;
 }
 
 .cards .card a img {
@@ -245,5 +246,36 @@ a.dropdown-item:active {
     border-top-right-radius: 0.25rem;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0.25rem;
+  }
+}
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-light .navbar-toggler:hover .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  transition: background-image .15s ease-in-out;
+}
+
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, 1);
+  border-color: rgba(0, 0, 0, 1);
+  transition: color .15s ease-in-out, background-color .15s ease-in-out;
+}
+
+.navbar-light .navbar-toggler:hover {
+  color: rgba(255, 255, 255, 1);
+  background-color: rgba(0, 0, 0, 1);
+  transition: color .15s ease-in-out, background-color .15s ease-in-out;
+}
+
+@media (min-width: 576px) {
+  .card {
+    margin-bottom: 2em;
+  }
+
+  .container.cards {
+    margin-top: 2em;
   }
 }
