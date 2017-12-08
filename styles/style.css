@@ -47,6 +47,10 @@ html, body, .full-height {
   font-size: 0.75em;
 }
 
+#menu-home .btn:hover {
+  color: #000;
+}
+
 #menu-home .dropdown-menu {
   min-width: 0;
 }
