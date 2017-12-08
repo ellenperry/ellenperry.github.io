@@ -51,6 +51,11 @@ html, body, .full-height {
   min-width: 0;
 }
 
+#menu-home a.dropdown-item:hover, .nav1 a.dropdown-item:hover {
+  background-color: #343a40;
+  color: #fff;
+}
+
 #right-home {
   background: url('../images/lady.jpg') center center / contain no-repeat, white;
 }
@@ -188,4 +193,57 @@ a.dropdown-item:active {
 
 .nav1 .dropdown-menu {
   min-width: 0;
+}
+
+.nav1 .navbar-collapse.collapse.show, .nav1 .navbar-collapse.collapsing {
+  margin-bottom: 0.75em;
+  margin-top: 0.5em;
+}
+
+.nav1 .navbar-collapse.collapse a.btn.btn-outline-dark:not(:last-child), .nav1 .navbar-collapse.collapse.show a.btn.btn-outline-dark:not(:last-child), .nav1 .navbar-collapse.collapsing a.btn.btn-outline-dark:not(:last-child) {
+  border-bottom: 0;
+}
+
+.nav1 .navbar-collapse.collapse a.btn.btn-outline-dark:not(:first-child), .nav1 .navbar-collapse.collapse.show a.btn.btn-outline-dark:not(:first-child), .nav1 .navbar-collapse.collapsing a.btn.btn-outline-dark:not(:first-child) {
+  margin-left: 0;
+  margin-top: -1px;
+}
+
+.nav1 .navbar-collapse.collapse a.btn.btn-outline-dark:first-child, .nav1 .navbar-collapse.collapse.show a.btn.btn-outline-dark:first-child, .nav1 .navbar-collapse.collapsing a.btn.btn-outline-dark:first-child {
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.nav1 .navbar-collapse.collapse a.btn.btn-outline-dark:last-child, .nav1 .navbar-collapse.collapse.show a.btn.btn-outline-dark:last-child, .nav1 .navbar-collapse.collapsing a.btn.btn-outline-dark:last-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+
+@media (min-width: 768px) {
+  .nav1 .navbar-collapse.collapse a.btn.btn-outline-dark:not(:last-child), .nav1 .navbar-collapse.collapse.show a.btn.btn-outline-dark:not(:last-child), .nav1 .navbar-collapse.collapsing a.btn.btn-outline-dark:not(:last-child) {
+    border-bottom: 1px solid #000;
+  }
+
+  .nav1 .navbar-collapse.collapse a.btn.btn-outline-dark:not(:first-child), .nav1 .navbar-collapse.collapse.show a.btn.btn-outline-dark:not(:first-child), .nav1 .navbar-collapse.collapsing a.btn.btn-outline-dark:not(:first-child) {
+    margin-left: -1px;
+    margin-top: 0;
+  }
+
+  .nav1 .navbar-collapse.collapse a.btn.btn-outline-dark:first-child, .nav1 .navbar-collapse.collapse.show a.btn.btn-outline-dark:first-child, .nav1 .navbar-collapse.collapsing a.btn.btn-outline-dark:first-child {
+    border-top-left-radius: 0.25rem;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 0.25rem;
+    border-bottom-right-radius: 0;
+  }
+
+  .nav1 .navbar-collapse.collapse a.btn.btn-outline-dark:last-child, .nav1 .navbar-collapse.collapse.show a.btn.btn-outline-dark:last-child, .nav1 .navbar-collapse.collapsing a.btn.btn-outline-dark:last-child {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0.25rem;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0.25rem;
+  }
 }
