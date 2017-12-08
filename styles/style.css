@@ -29,7 +29,7 @@ html, body, .full-height {
 }
 
 #logo-home {
-  background: url('../images/logo.png') bottom center / contain no-repeat;
+  background: url('../images/logo.svg') bottom center / contain no-repeat;
   filter: invert(100%);
   height: 50%;
   margin: 1em 10% 2em 10%;
@@ -53,6 +53,10 @@ html, body, .full-height {
 
 #right-home {
   background: url('../images/lady.jpg') center center / contain no-repeat, white;
+}
+
+.navbar-brand {
+  padding-bottom: 0.25rem;
 }
 
 .kern-fix {
@@ -164,8 +168,24 @@ h1 {
   margin-top: 6em;
 }
 
-a.btn.btn-outline-dark.active.kern-fix {
+a.btn.btn-outline-dark.current.kern-fix {
+  color: #fff;
+}
+
+a.btn.btn-outline-dark.current.kern-fix:not(:active) {
   box-shadow: 0 0 0 0;
   background-color: #000;
   border-color: #000;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  color: #000;
+}
+
+a.dropdown-item:active {
+  background-color: rgba(52, 58, 64, .5) !important;
+}
+
+.nav1 .dropdown-menu {
+  min-width: 0;
 }
