@@ -30,13 +30,36 @@
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="styles/style.css" type="text/css">
 
+	<script>
+	$(document).ready(function(){
+		$(window).bind('scroll', function(){
+			var navHeight = $('#nav1').height();
+			if ($(window).scrollTop() > navHeight) {
+				$('#nav2').addClass('fixednav');
+			}
+			else {
+				$('#nav2').removeClass('fixednav');
+			}
+		});
+		$(window).bind('load', function(){
+			var navHeight = $('#nav1').height();
+			if ($(window).scrollTop() > navHeight) {
+				$('#nav2').addClass('fixednav');
+			}
+			else {
+				$('#nav2').removeClass('fixednav');
+			}
+		});
+	});
+	</script>
+
 </head>
 <body data-spy="scroll" data-target="#nav2">
 
 	<div class="container">
-		<nav class="navbar navbar-expand-md navbar-light nav1">
+		<nav id="nav1" class="navbar navbar-expand-md navbar-light nav1">
 		  <a class="navbar-brand" href="index.html">
-				<img src="images/logo.svg" class="logo">
+				<img src="images/logo.png" class="logo">
 			</a>
 		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarPortfolio" aria-controls="navbarPortfolio" aria-expanded="false" aria-label="Toggle navigation">
 		    <span class="navbar-toggler-icon"></span>
@@ -69,7 +92,7 @@
 		</ul>
 	</nav>
 
-	<div class="container cards">
+	<div id="card-container" class="container cards">
 		<!-- TATTOO -->
 		<div id="tattoo" class="row">
 			<div class="col-sm-4">
@@ -872,20 +895,6 @@
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
-
-	<script>
-   $(document).ready(function(){
-	   $(window).bind('scroll', function() {
-	   var navHeight = $('.nav2').height();
-			 if ($(window).scrollTop() > navHeight) {
-				 $('#nav2').addClass('fixednav');
-			 }
-			 else {
-				 $('#nav2').removeClass('fixednav');
-			 }
-		});
-	});
-	</script>
 
 </body>
 </html>

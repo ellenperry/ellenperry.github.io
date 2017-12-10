@@ -29,7 +29,7 @@ html, body, .full-height {
 }
 
 #logo-home {
-  background: url('../images/logo.svg') bottom center / contain no-repeat;
+  background: url('../images/logo.png') bottom center / contain no-repeat;
   filter: invert(100%);
   height: 50%;
   margin: 1em 10% 2em 10%;
