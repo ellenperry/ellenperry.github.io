@@ -12,25 +12,15 @@
 	</script>
 
 	<!-- Metadata -->
-	<title>Ellen Perry Art</title>
+	<title>Ellen Perry Art | About</title>
 	<meta charset="utf-8">
 	<meta name="keywords" content="Ellen Perry Art">
 	<meta name="description" content="Tattoo & Illustration">
 	<meta name="author" content="Ellen Perry">
 	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	<!-- Open Graph Metadata -->
-	<meta name="og:title" content="Ellen Perry Art">
-	<meta name="og:description" content="Tattoo & Illustration">
-	<meta name="og:image" content="http://ellenperryart.com/images/preview.png">
-	<meta name="og:url" content="http://ellenperryart.com">
-	<meta name="og:site_name" content="Ellen Perry Art">
-	<meta name="og:locale" content="en_US">
-	<meta name="og:type" content="website">
 
 	<!-- CSS Stylesheets -->
-	<!-- Reset CSS -->
-	<link rel="stylesheet" href="styles/reset.css" type="text/css">
 	<!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
 	<!-- Google Fonts CSS (Playfair Display) -->
@@ -43,34 +33,37 @@
 </head>
 <body>
 
-	<div class="container-fluid full-height">
-		<div class="row full-height wrap-reverse">
-			<div id="left-home" class="col-sm-6">
-				<div id="spacer-home" class="row"></div>
-				<div id="logo-home" class="row"></div>
-				<div id="menu-home" class="row">
-					<div class="col">
-						<div class="btn-group" role="group" aria-label="Button group with nested dropdown">
-							<a class="btn btn-outline-light kern-fix" href="about.html" role="button">About</a>
-						  <a class="btn btn-outline-light kern-fix" href="contact.html" role="button">Contact</a>
-							<div class="btn-group" role="group">
-						    <button id="menuHome" type="button" class="btn btn-outline-light dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-						      Portfolio
-						    </button>
-						    <div class="dropdown-menu" aria-labelledby="menuHome">
-						      <a class="dropdown-item" href="portfolio.html#tattoo">Tattoo</a>
-									<a class="dropdown-item" href="portfolio.html#illustration">Illustration</a>
-									<a class="dropdown-item" href="portfolio.html#design">Design</a>
-									<a class="dropdown-item" href="portfolio.html#sketches">Sketches</a>
-						    </div>
-						  </div>
-						</div>
-					</div>
-				</div>
-			</div>
-			<div id="right-home" class="col-sm-6">
-			</div>
-		</div>
+	<div class="container">
+		<nav class="navbar navbar-expand-md navbar-light nav1">
+		  <a class="navbar-brand" href="index.html">
+				<img src="images/logo.png" class="logo">
+			</a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarPortfolio" aria-controls="navbarPortfolio" aria-expanded="false" aria-label="Toggle navigation">
+		    <span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="collapse navbar-collapse" id="navbarPortfolio">
+		    <ul class="navbar-nav ml-auto btn-group" role="group">
+	        <a class="btn btn-outline-dark kern-fix" href="index.html">Home</a>
+					<a class="btn btn-outline-dark kern-fix current" href="about.html">About</a>
+					<a class="btn btn-outline-dark kern-fix" href="contact.html">Contact</a>
+					<li class="btn-group" role="group">
+				    <button id="menuHome" type="button" class="btn btn-outline-dark dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				      Portfolio
+				    </button>
+				    <div class="dropdown-menu" aria-labelledby="menuHome">
+				      <a class="dropdown-item" href="portfolio.html#tattoo">Tattoo</a>
+							<a class="dropdown-item" href="portfolio.html#illustration">Illustration</a>
+							<a class="dropdown-item" href="portfolio.html#design">Design</a>
+							<a class="dropdown-item" href="portfolio.html#sketches">Sketches</a>
+				    </div>
+				  </li>
+		    </ul>
+		  </div>
+		</nav>
+	</div>
+
+	<div class="coming-soon">
+		<h1>Coming Soon!</h1>
 	</div>
 
 	<!-- Bootstrap JS -->
