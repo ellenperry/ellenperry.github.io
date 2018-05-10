@@ -1,2 +1,2 @@
 # ellenperry.github.io
-Temporary website hosted on GitHub Pages
+Ellen Perry's website hosted on GitHub Pages
